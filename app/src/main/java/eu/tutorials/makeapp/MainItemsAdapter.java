@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.ViewModel;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -22,6 +21,10 @@ public class MainItemsAdapter extends RecyclerView.Adapter<MainItemsAdapter.View
     private Context context;
     private ArrayList<APP> array;
 
+    public MainItemsAdapter(Context context, ArrayList<APP> array) {
+        this.context = context;
+        this.array = array;
+    }
 
     @NonNull
     @Override
