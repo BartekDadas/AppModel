@@ -1,4 +1,4 @@
-package eu.tutorials.makeapp.ui.login;
+package eu.tutorials.makeapp.activities;
 
 import android.app.Activity;
 
@@ -23,6 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import eu.tutorials.makeapp.R;
+import eu.tutorials.makeapp.ui.login.LoggedInUserView;
+import eu.tutorials.makeapp.ui.login.LoginFormState;
+import eu.tutorials.makeapp.ui.login.LoginResult;
 import eu.tutorials.makeapp.ui.login.LoginViewModel;
 import eu.tutorials.makeapp.ui.login.LoginViewModelFactory;
 import eu.tutorials.makeapp.databinding.ActivityLoginBinding;
