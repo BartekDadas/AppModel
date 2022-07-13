@@ -29,10 +29,18 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
-        android:layout_height="790dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/toolbar_main"
-        android:layout_alignParentBottom="true"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="0dp"
         android:orientation="vertical" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_add_app"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:textSize="100sp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="+"-->
+<!--        android:layout_below="@id/rv_main"/>-->
 </RelativeLayout>
