@@ -8,7 +8,7 @@ import eu.tutorials.makeapp.R;
 public class Apps {
 
     private ArrayList<APP> apps;
-    APP nAPP = new APP("Appy", R.drawable.ic_launcher_background);
+
 
 
     public Apps(ArrayList<APP> apps) {
@@ -16,7 +16,6 @@ public class Apps {
     }
 
     public ArrayList<APP> getApps() {
-        apps.add(nAPP);
         return apps;
     }
 }

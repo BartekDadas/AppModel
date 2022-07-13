@@ -29,14 +29,22 @@ public class MainItemsAdapter extends RecyclerView.Adapter<MainItemsAdapter.View
     @NonNull
     @Override
     public ViewModel onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main, parent, false);
-        return new ViewModel(view);
+        View view;
+        switch (viewType) {
+            case 0:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main, parent, false);
+                return new ViewModel(view);
+            case 1:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.btn_add_up, parent, false);
+                return new ViewModel(view);
+        }
+        return null;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewModel holder, int position) {
         holder.textView.setText(array.get(position).getTitle());
-        Glide.with(context).load(array.get(position).getImage()).into(holder.imageView);
+//        Glide.with(context).load(array.get(position).getImage()).into(holder.imageView);
     }
 
     @Override
@@ -44,14 +52,25 @@ public class MainItemsAdapter extends RecyclerView.Adapter<MainItemsAdapter.View
         return array.size();
     }
 
-    public class ViewModel extends RecyclerView.ViewHolder {
+
+    @Override
+    public int getItemViewType(int position) {
+
+        if (position != array.size()) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+
+    public static class ViewModel extends RecyclerView.ViewHolder {
         TextView textView;
         ImageView imageView;
 
         public ViewModel(@NonNull View itemView) {
             super(itemView);
-            textView = itemView.findViewById(R.id.iv_item_main);
-            imageView = itemView.findViewById(R.id.tv_item_main);
+            textView = itemView.findViewById(R.id.tv_item_main);
+            imageView =  itemView.findViewById(R.id.iv_item_main);
         }
     }
 }
