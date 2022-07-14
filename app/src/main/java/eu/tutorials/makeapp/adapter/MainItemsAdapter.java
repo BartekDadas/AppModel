@@ -1,4 +1,4 @@
-package eu.tutorials.makeapp;
+package eu.tutorials.makeapp.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,12 +12,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 
+import eu.tutorials.makeapp.R;
 import eu.tutorials.makeapp.activities.ChoiceAppActivity;
-import eu.tutorials.makeapp.activities.MainActivity;
 import eu.tutorials.makeapp.data.model.APP;
 
 public class MainItemsAdapter extends RecyclerView.Adapter<MainItemsAdapter.ViewModel> {

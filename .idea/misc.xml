@@ -7,10 +7,13 @@
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.16331994645247658" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.190625" />
+        <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/activity_choice_app.xml" value="0.20854700854700856" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/activity_hello.xml" value="0.1826835902085222" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/activity_login.xml" value="0.20854700854700856" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/btn_add_up.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/item_choice.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/item_choice_category.xml" value="0.264" />
         <entry key="..\:/Users/barto/AndroidStudioProjects/MakeApp/app/src/main/res/layout/item_main.xml" value="0.176" />
       </map>
     </option>
