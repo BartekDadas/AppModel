@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -14,7 +16,7 @@ import eu.tutorials.makeapp.R;
 import eu.tutorials.makeapp.adapter.CategoryChoiceAdapter;
 import eu.tutorials.makeapp.data.model.Category;
 
-public class ChoiceAppActivity extends AppCompatActivity {
+public class ChoiceAppActivity extends AppCompatActivity implements CategoryChoiceAdapter.OnCategoryClick {
 
     ArrayList<Category> categories;
     RecyclerView recyclerView;
@@ -30,7 +32,7 @@ public class ChoiceAppActivity extends AppCompatActivity {
     void setupRecyclerView() {
         categories = new ArrayList<Category>();
         recyclerView = findViewById(R.id.rv_category);
-        CategoryChoiceAdapter adapter = new CategoryChoiceAdapter(this, categories);
+        CategoryChoiceAdapter adapter = new CategoryChoiceAdapter(this, categories, this);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
@@ -49,8 +51,11 @@ public class ChoiceAppActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
+    @Override
+    public void onClickCategory(View v, int position) {
+        Intent intent = new Intent(ChoiceAppActivity.this, StyleActivity.class);
+        intent.putExtra("category", categories.get(position).getImageCategory());
+        startActivity(intent);
+        finish();
+    }
 }
